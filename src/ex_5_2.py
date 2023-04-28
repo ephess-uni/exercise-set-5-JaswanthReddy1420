@@ -25,6 +25,6 @@ if __name__ == "__main__":
     data = np.loadtxt(INFILE, delimiter=',')
     data -= np.mean(data)
     data /= np.std(data)
-    processed = data 
+    processed = data
     # Save the output to OUTFILE using numpy routines.
     np.savetxt(OUTFILE, processed, delimiter=',')
